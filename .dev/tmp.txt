@@ -1,0 +1,25 @@
+
+    Build a simple REST API server using Node.js, Express.js, Sequelize ORM.
+
+    Build Todo list API.
+
+    - DB you should use PSQL(preffered) or MySql
+    - MVC pattern.
+    - Server auth based on JWT
+    - Swagger docs (optional, not required)
+
+    Logic:
+     - All routes beside login should be protected(allowed only to sign in users)
+     - Between Tasks and User should be relationship ManyToOne
+     - User should be able to create, remove, edit and find task
+     - Do not forget about server side validation and pagination
+     - user should be able to find only tasks that bound to him
+
+    Task entity:
+     - label
+     - description
+     - is_done
+
+    User entity:
+     - email
+     - password

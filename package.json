@@ -1,0 +1,25 @@
+{
+  "name": "acromove",
+  "version": "1.0.0",
+  "description": "test todo api",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "ENVTYPE=DEV nodemon --inspect index.js",
+    "start": "ENVTYPE=PROD node index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.19",
+    "npmlog": "^6.0.0",
+    "sequelize": "^6.6.5",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}

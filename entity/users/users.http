@@ -1,0 +1,62 @@
+
+GET http://localhost:3000/users/1
+Accept: application/json
+
+
+
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "user@host.com",
+  "password": "TEST123@i"
+}
+
+<> 2022-09-03T152759.200.json
+<> 2022-09-03T152647.404.json
+<> 2022-09-03T152358.404.json
+<> 2022-09-03T152355.404.json
+<> 2022-09-03T152322.404.json
+<> 2022-09-03T152321.404.json
+<> 2022-09-03T152254.404.json
+<> 2022-09-03T151334.404.json
+<> 2022-09-03T151332.404.json
+<> 2022-09-03T151256.404.json
+<> 2022-09-03T151255.404.json
+<> 2022-09-03T151243.404.json
+<> 2022-09-03T151242.404.json
+<> 2022-09-03T151210.404.json
+<> 2022-09-03T151209.404.json
+<> 2022-09-03T151156.404.json
+<> 2022-09-03T151155.404.json
+<> 2022-09-03T151146.404.json
+<> 2022-09-03T151145.404.json
+<> 2022-09-03T151126.404.json
+<> 2022-09-03T151125.404.json
+<> 2022-09-03T151112.404.json
+<> 2022-09-03T151108.404.json
+<> 2022-09-03T151050.404.json
+
+
+###
+
+
+PUT http://localhost:3000/users/20
+Content-Type: application/json
+
+{
+  "email": "tsikisfm",
+  "password": "makmou345"
+}
+
+
+###
+
+DELETE http://localhost:3000/users/20
+Content-Type: application/json
+
+
+###
