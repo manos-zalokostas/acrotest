@@ -2,8 +2,8 @@ const {Logger, Assure} = require("../helper/Ally");
 const Identifier = require("../helper/Identifier")
 
 
-const NO_LOGIN = 'NO_LOGIN';
 const TOKEN = 'token';
+const NO_LOGIN = 'NO_LOGIN';
 const _30MIN = 1000 * 60 * 30;
 const TOKEN_OPTS = {
     httpOnly: true,
@@ -116,6 +116,11 @@ module.exports = function () {
         },
 
 
+        /**
+         *
+         * @param req
+         * @param res
+         */
         deprecate: function (req, res) {
 
             this.init(req, res);
@@ -179,7 +184,7 @@ module.exports = function () {
 
             let value = [userId, userEmail, userRole];
 
-            return Identifier.sha256(value + process.env.ENV_APISEC + this.req.agent);
+            return Identifier.sha256(value + process.env.ENV_APISEC + this.req.headers['user-agent']);
 
         },
 

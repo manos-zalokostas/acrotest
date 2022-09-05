@@ -1,6 +1,6 @@
 const {Controller, Endpoint, Logger} = require('./helper/Ally');
-const Api = require("./helper/Api");
 const Auth = require("./service/auth")();
+const Api = require("./helper/Api");
 
 const NO_LOGIN = 'NO_LOGIN';
 
